@@ -1,0 +1,53 @@
+package problem4;
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class Problem1Test {
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+	}
+
+	@Before
+	public void setUp() throws Exception {
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		
+	}
+
+	@Test
+	public void testReturnInput() {
+	Problem1 pi = new Problem1();
+	int ans=pi.returnInput(5, true, true);
+	
+	assertEquals(5,ans);
+ 	}
+	@Test
+	public void testReturnInput1() {
+	Problem1 pi = new Problem1();
+	int ans =pi.returnInput(5, false,false);
+	assertEquals(5,ans);
+
+	
+	}
+	@Test
+	public void testReturnInput2() {
+	Problem1 pi = new Problem1();
+	int ans =pi.returnInput(5, false,true);
+	assertEquals(6,ans);
+
+	
+	}
+
+}
